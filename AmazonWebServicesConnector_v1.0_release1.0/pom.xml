@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * The contents of this file are subject to the terms of the Common Development and
+ * Distribution License (the License). You may not use this file except in compliance
+ * with the License.
+ *
+ * You can obtain a copy of the License at legal/CDDLv1.0.txt. See the License for
+ * the specific language governing permission and limitations under the License.
+ *
+ * When distributing Covered Software, include this CDDL Header Notice in each file
+ * and include the License file at legal/CDDLv1.0.txt. If applicable, add the following
+ * below the CDDL Header, with the fields enclosed by brackets [] replaced by your
+ * own identifying information: "Portions copyright [year] [name of copyright owner]".
+ *
+ * Copyright 2011-2016 ForgeRock AS.
+ */
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.forgerock.openicf.connectors</groupId>
+    <artifactId>aws-connector</artifactId>
+    <version>1.5.0.0</version>
+    <packaging>bundle</packaging>
+    <name>AWS Connector</name>
+    <description>Connector for AWS Application</description>
+    <properties>
+        <connectorPackage>org.forgerock.openicf.connectors.aws</connectorPackage>
+        <connectorClass>AWSConnector</connectorClass>
+        <framework.compatibilityVersion>1.5</framework.compatibilityVersion>
+        <framework.releaseVersion>2.0</framework.releaseVersion>
+        <docTargetVersion>${project.version}</docTargetVersion>
+        <openicf.maven.plugin.version>1.5.2</openicf.maven.plugin.version>
+        <frDocPluginVersion>4.0.4</frDocPluginVersion>
+        <siteDistributionURL>scp://community.internal.forgerock.com/var/www/vhosts/openicf.forgerock.org/httpdocs</siteDistributionURL>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>forgerock-plugins-repository</id>
+            <name>ForgeRock Plugin Repository</name>
+            <url>https://maven.forgerock.org/repo/plugins</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.forgerock.openicf.framework</groupId>
+            <artifactId>connector-framework</artifactId>
+            <scope>system</scope>
+            <version>1.5.2.0</version>
+            <systemPath>${basedir}/lib/connector-framework-1.5.2.0.jar</systemPath>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sts -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-sts</artifactId>
+            <version>1.11.1034</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-core</artifactId>
+            <version>1.11.1034</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-iam -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-iam</artifactId>
+            <version>1.11.1034</version>
+        </dependency>
+        <dependency>
+            <groupId>org.forgerock.openicf.framework</groupId>
+            <artifactId>connector-framework-internal</artifactId>
+            <scope>system</scope>
+            <version>1.5.2.0</version>
+            <systemPath>${basedir}/lib/connector-framework-internal-1.5.2.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>org.forgerock.openicf.framework</groupId>
+            <artifactId>connector-test-common</artifactId>
+            <scope>system</scope>
+            <version>1.5.2.0</version>
+            <systemPath>${basedir}/lib/connector-test-common-1.5.2.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <ConnectorBundle-FrameworkVersion>1.5</ConnectorBundle-FrameworkVersion>
+                        <ConnectorBundle-Name>org.forgerock.openicf.connectors.aws-connector</ConnectorBundle-Name>
+                        <ConnectorBundle-Version>1.5.0.0</ConnectorBundle-Version>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <reuseForks>false</reuseForks>
+                    <forkCount>1</forkCount>
+                    <shutdown>kill</shutdown>
+                    <forkedProcessTimeoutInSeconds>300</forkedProcessTimeoutInSeconds>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <stagingSiteURL>
+                        ${siteDistributionURL}/connectors/${project.artifactId}-${project.version}
+                    </stagingSiteURL>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.forgerock.maven.plugins</groupId>
+                        <artifactId>openicf-maven-plugin</artifactId>
+                        <version>${openicf.maven.plugin.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.forgerock.maven.plugins</groupId>
+                <artifactId>openicf-maven-plugin</artifactId>
+                <version>${openicf.maven.plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.forgerock.commons</groupId>
+                <artifactId>forgerock-doc-maven-plugin</artifactId>
+                <version>${frDocPluginVersion}</version>
+                <configuration>
+                    <projectName>OpenICF</projectName>
+                    <googleAnalyticsId>${googleAnalyticsAccountId}</googleAnalyticsId>
+                    <projectVersion>${docTargetVersion}</projectVersion>
+                    <releaseVersion>${docTargetVersion}</releaseVersion>
+                    <docbkxSourceDirectory>${basedir}/src/main/docbkx</docbkxSourceDirectory>
+                    <copyResourceFiles>true</copyResourceFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>generate-docbook</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.forgerock.maven.plugins</groupId>
+                        <artifactId>openicf-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>docbkx</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.forgerock.commons</groupId>
+                        <artifactId>forgerock-doc-maven-plugin</artifactId>
+                        <inherited>true</inherited>
+                        <configuration>
+                            <projectName>OpenICF</projectName>
+                            <projectVersion>${docTargetVersion}</projectVersion>
+                            <docbkxSourceDirectory>${project.build.directory}/openicf-docbkx</docbkxSourceDirectory>
+                            <projectVersion>${docTargetVersion}</projectVersion>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>pre-process-doc</id>
+                                <phase>pre-site</phase>
+                                <goals>
+                                    <goal>process</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

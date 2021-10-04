@@ -1,0 +1,14 @@
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\operations\package-info.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\operations\AWSFilterTranslator.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\util\package-info.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\util\AWSUtility.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\operations\AWSCreateOperation.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\AWSConnector.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\util\AWSConstants.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\operations\AWSUpdateOperation.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\package-info.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\operations\AWSSearchOperation.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\operations\AWSDeleteOperation.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\AWSConfiguration.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\util\AWSConnection.java
+D:\ICF_Sample\AwsReviewed11Aug\src\main\java\org\forgerock\openicf\connectors\aws\util\AWSSchema.java

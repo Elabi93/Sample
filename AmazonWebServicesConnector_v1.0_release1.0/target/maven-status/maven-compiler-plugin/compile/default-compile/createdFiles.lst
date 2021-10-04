@@ -1,0 +1,13 @@
+org\forgerock\openicf\connectors\aws\AWSConnector.class
+org\forgerock\openicf\connectors\aws\util\AWSConnection$AWSCredentialsProviderBasicImpl.class
+org\forgerock\openicf\connectors\aws\operations\AWSCreateOperation.class
+org\forgerock\openicf\connectors\aws\operations\AWSUpdateOperation.class
+org\forgerock\openicf\connectors\aws\util\AWSConnection$AWSCredentialsProviderSessionImpl.class
+org\forgerock\openicf\connectors\aws\AWSConfiguration.class
+org\forgerock\openicf\connectors\aws\util\AWSUtility.class
+org\forgerock\openicf\connectors\aws\operations\AWSSearchOperation.class
+org\forgerock\openicf\connectors\aws\operations\AWSDeleteOperation.class
+org\forgerock\openicf\connectors\aws\operations\AWSFilterTranslator.class
+org\forgerock\openicf\connectors\aws\util\AWSConstants.class
+org\forgerock\openicf\connectors\aws\util\AWSConnection.class
+org\forgerock\openicf\connectors\aws\util\AWSSchema.class

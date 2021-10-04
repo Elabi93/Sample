@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2013-2017 ForgeRock AS. All Rights Reserved
+ 
+  Use of this code requires a commercial software license with ForgeRock AS.
+  or with one of its affiliates. All use shall be exclusively subject
+  to such license between the licensee and ForgeRock AS.
+-->
+<section xml:id='sec-schema-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0'
+         xmlns='http://docbook.org/ns/docbook'
+         version='5.0' xml:lang='en'
+         xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+         xsi:schemaLocation='http://docbook.org/ns/docbook
+ http://docbook.org/xml/5.0/xsd/docbook.xsd'
+         xmlns:xlink='http://www.w3.org/1999/xlink'>
+
+  <title>AWS Connector Schema</title>
+  <para>
+   The connector schema determines the object classes, operations and attributes
+   that are supported by the connector. The AWS Connector supports the
+   object classes:
+  </para>
+
+  <table>
+   <title>Supported Object Classes</title>
+   <tgroup cols="2">
+    <?dbhtml cellspacing="0" ?>
+    <?dbhtml cellpadding="2" ?>
+    <thead>
+     <row>
+      <entry>Object Class</entry>
+      <entry>Supported Operations</entry>
+     </row>
+    </thead>
+    <tbody>
+          <row>
+      <entry>
+       <para>__ACCOUNT__ (__ACCOUNT__)</para>
+      </entry>
+      <entry>
+               <para>All <link linkend="sec-implemented-interfaces-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0">connector operations</link> are supported.</para>
+             </entry>
+     </row>
+         </tbody>
+   </tgroup>
+  </table>
+
+            <para>
+            The connector may not support any operation option.
+        </para>
+        <para>
+   The __ACCOUNT__ (__ACCOUNT__) supports the following attributes.
+  </para>
+  <table xml:id="supported-attributes-__ACCOUNT__-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0">
+   <title>Supported Attributes</title>
+   <tgroup cols="8">
+    <colspec colnum="1" colwidth="2*"/>
+    <colspec colnum="2" colwidth="1*"/>
+    <colspec colnum="3" colwidth="1*"/>
+    <colspec colnum="4" colwidth="1*"/>
+    <colspec colnum="5" colwidth="1*"/>
+    <colspec colnum="6" colwidth="1*"/>
+    <colspec colnum="7" colwidth="1*"/>
+    <colspec colnum="8" colwidth="1*"/>
+    <thead>
+     <row>
+      <entry>Attribute</entry>
+      <entry>Type</entry>
+      <entry>Required</entry>
+      <entry>Multivalued</entry>
+      <entry>Creatable</entry>
+      <entry>Modifiable</entry>
+      <entry>Readable</entry>
+      <entry>Returned by Default</entry>
+     </row>
+    </thead>
+    <tbody>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>Path</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>__PASSWORD__</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>GuardedString</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>PasswordLastUsed</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>PermissionsBoundary</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>CreateDate</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>__NAME__</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>Tags.member.Key</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>Arn</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+                    <row valign="top">
+                <entry>
+                    <para>
+                        <literal>Tags.member.Value</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <para>
+                        <literal>String</literal>
+                    </para>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/no-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+                <entry>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                    fileref="../shared/images/yes-icon.png"
+                                    format="PNG"/>
+                        </imageobject>
+                        <textobject role="fo"><para>No</para></textobject>
+                    </mediaobject>
+                </entry>
+            </row>
+            </tbody>
+   </tgroup>
+  </table>
+    
+</section>

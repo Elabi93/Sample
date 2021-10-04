@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2013-2017 ForgeRock AS. All Rights Reserved
+ 
+  Use of this code requires a commercial software license with ForgeRock AS.
+  or with one of its affiliates. All use shall be exclusively subject
+  to such license between the licensee and ForgeRock AS.
+-->
+<section xml:id='sec-config-properties-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0'
+         xmlns='http://docbook.org/ns/docbook'
+         version='5.0' xml:lang='en'
+         xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+         xsi:schemaLocation='http://docbook.org/ns/docbook
+         http://docbook.org/xml/5.0/xsd/docbook.xsd'
+         xmlns:xlink='http://www.w3.org/1999/xlink'>
+
+    <title>AWS Connector Configuration</title>
+    <para>
+        The AWS Connector has the following configurable properties.
+    </para>
+
+            <!--THE FOLLOWING SECTION MUST BE GENERATED ONCE FOR EACH groupMessageKey -->
+
+        <section xml:id="configuration-properties-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0">
+            <title>Configuration Properties</title>
+
+            <informaltable pgwide="1">
+                <tgroup cols="5">
+                    <?dbhtml cellspacing="0" ?>
+                    <?dbhtml cellpadding="2" ?>
+                    <colspec colname="a" colnum="1" colwidth="2*"/>
+                    <colspec colname="b" colnum="2" colwidth="1*"/>
+                    <colspec colname="c" colnum="3" colwidth="1*"/>
+                    <colspec colname="d" colnum="4" colwidth="1*"/>
+                    <colspec colname="e" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Property</entry>
+                            <entry>Type</entry>
+                            <entry>Default</entry>
+                            <entry>
+                             Encrypted
+                                <footnote>
+                                    <para>
+                                        Indicates whether the property value is considered confidential, and
+                                        therefore encrypted in OpenIDM.
+                                    </para>
+                                </footnote>
+                            </entry>
+                            <entry>
+                             Required
+                                <footnote>
+                                    <para>
+                                     A list of operations in this column indicates that the property is
+                                     required for those operations.
+                                    </para>
+                                </footnote>
+                            </entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                                                    <row valign="top">
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry>
+                                    <literal>accessKeyId</literal>
+                                </entry>
+                                <entry>
+                                    <literal>String</literal>
+                                </entry>
+                                <entry>
+                                    <literal>null</literal>
+                                </entry>
+                                <entry align="center">
+                                                                    </entry>
+                                <entry align="center">
+                                                                            <mediaobject>
+                                            <imageobject>
+                                                <imagedata
+                                                        fileref="../shared/images/yes-icon.png"
+                                                        format="PNG"/>
+                                            </imageobject>
+                                            <textobject role="fo"><para>Yes</para></textobject>
+                                        </mediaobject>
+                                                                    </entry>
+                            </row>
+                            <row>
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry namest="a" nameend="e">
+                                    <para>Please provide the Access Key Id to access the AWS IAM Service API</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <?dbhtml row-height="10" ?>
+                                <entry namest="a" nameend="e">
+                                    <para> </para>
+                                </entry>
+                            </row>
+                                                    <row valign="top">
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry>
+                                    <literal>secretKey</literal>
+                                </entry>
+                                <entry>
+                                    <literal>GuardedString</literal>
+                                </entry>
+                                <entry>
+                                    <literal>null</literal>
+                                </entry>
+                                <entry align="center">
+                                                                            <mediaobject>
+                                            <imageobject>
+                                                <imagedata fileref="../shared/images/encrypted.png" format="PNG"/>
+                                            </imageobject>
+                                             <textobject role="fo"><para>Yes</para></textobject>
+                                        </mediaobject>
+                                                                    </entry>
+                                <entry align="center">
+                                                                            <mediaobject>
+                                            <imageobject>
+                                                <imagedata
+                                                        fileref="../shared/images/yes-icon.png"
+                                                        format="PNG"/>
+                                            </imageobject>
+                                            <textobject role="fo"><para>Yes</para></textobject>
+                                        </mediaobject>
+                                                                    </entry>
+                            </row>
+                            <row>
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry namest="a" nameend="e">
+                                    <para>Please provide the Secret Key Id to access the AWS IAM Service API</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <?dbhtml row-height="10" ?>
+                                <entry namest="a" nameend="e">
+                                    <para> </para>
+                                </entry>
+                            </row>
+                                                    <row valign="top">
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry>
+                                    <literal>roleARN</literal>
+                                </entry>
+                                <entry>
+                                    <literal>String</literal>
+                                </entry>
+                                <entry>
+                                    <literal>null</literal>
+                                </entry>
+                                <entry align="center">
+                                                                    </entry>
+                                <entry align="center">
+                                                                            <mediaobject>
+                                            <imageobject>
+                                                <imagedata
+                                                        fileref="../shared/images/yes-icon.png"
+                                                        format="PNG"/>
+                                            </imageobject>
+                                            <textobject role="fo"><para>Yes</para></textobject>
+                                        </mediaobject>
+                                                                    </entry>
+                            </row>
+                            <row>
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry namest="a" nameend="e">
+                                    <para>Please provide the Amazon Resource Name specifying the Role</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <?dbhtml row-height="10" ?>
+                                <entry namest="a" nameend="e">
+                                    <para> </para>
+                                </entry>
+                            </row>
+                                                    <row valign="top">
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry>
+                                    <literal>pageSize</literal>
+                                </entry>
+                                <entry>
+                                    <literal>int</literal>
+                                </entry>
+                                <entry>
+                                    <literal>100</literal>
+                                </entry>
+                                <entry align="center">
+                                                                    </entry>
+                                <entry align="center">
+                                                                            <mediaobject>
+                                            <imageobject>
+                                                <imagedata
+                                                        fileref="../shared/images/no-icon.png"
+                                                        format="PNG"/>
+                                            </imageobject>
+                                            <textobject role="fo"><para>No</para></textobject>
+                                        </mediaobject>
+                                                                    </entry>
+                            </row>
+                            <row>
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry namest="a" nameend="e">
+                                    <para>Please provide the Page Size</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <?dbhtml row-height="10" ?>
+                                <entry namest="a" nameend="e">
+                                    <para> </para>
+                                </entry>
+                            </row>
+                                                    <row valign="top">
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry>
+                                    <literal>credentialsExpiration</literal>
+                                </entry>
+                                <entry>
+                                    <literal>int</literal>
+                                </entry>
+                                <entry>
+                                    <literal>900</literal>
+                                </entry>
+                                <entry align="center">
+                                                                    </entry>
+                                <entry align="center">
+                                                                            <mediaobject>
+                                            <imageobject>
+                                                <imagedata
+                                                        fileref="../shared/images/no-icon.png"
+                                                        format="PNG"/>
+                                            </imageobject>
+                                            <textobject role="fo"><para>No</para></textobject>
+                                        </mediaobject>
+                                                                    </entry>
+                            </row>
+                            <row>
+                                <?dbhtml bgcolor="#EBEDE6" ?><?dbfo bgcolor="#EBEDE6" ?>
+                                <entry namest="a" nameend="e">
+                                    <para>Please provide the temporary credentials expiration time in seconds</para>
+                                </entry>
+                            </row>
+                            <row>
+                                <?dbhtml row-height="10" ?>
+                                <entry namest="a" nameend="e">
+                                    <para> </para>
+                                </entry>
+                            </row>
+                                            </tbody>
+                </tgroup>
+            </informaltable>
+
+        </section>
+    
+</section>

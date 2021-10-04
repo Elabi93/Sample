@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2013-2017 ForgeRock AS. All Rights Reserved
+ 
+  Use of this code requires a commercial software license with ForgeRock AS.
+  or with one of its affiliates. All use shall be exclusively subject
+  to such license between the licensee and ForgeRock AS.
+-->
+<section xml:id='sec-reference-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0'
+ xmlns='http://docbook.org/ns/docbook'
+ version='5.0' xml:lang='en'
+ xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+ xsi:schemaLocation='http://docbook.org/ns/docbook
+ http://docbook.org/xml/5.0/xsd/docbook.xsd'
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <title>AWS Connector Reference Object</title>
+
+  <para>
+   The AWS Connector has the following unique identifiers, expressed here in
+   JSON format.
+  </para>
+  <programlisting language="java">
+"connectorRef" : {
+      "bundleName"    : "org.forgerock.openicf.connectors.aws-connector",
+      "bundleVersion" : "1.5.0.0",
+      "connectorName" : "org.forgerock.openicf.connectors.aws.AWSConnector"
+      }
+  </programlisting>
+  <para>
+   You can use OpenIDM to generate this configuration automatically when you
+   configure the connector. Alternatively, you
+   can copy this section and paste it directly into your connector configuration
+   file
+   (<filename>provisioner.openicf-<replaceable>connector-name</replaceable>.json</filename>).
+  </para>
+</section>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2013-2017 ForgeRock AS. All Rights Reserved
+ 
+  Use of this code requires a commercial software license with ForgeRock AS.
+  or with one of its affiliates. All use shall be exclusively subject
+  to such license between the licensee and ForgeRock AS.
+-->
+<chapter xml:id='chap-config-org-forgerock-openicf-connectors-aws-AWSConnector-1.5.0.0'
+         xmlns='http://docbook.org/ns/docbook'
+         version='5.0' xml:lang='en'
+         xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+         xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
+         xmlns:xinclude='http://www.w3.org/2001/XInclude'
+         xmlns:xlink='http://www.w3.org/1999/xlink'>
+
+    <title>AWS Connector Configuration</title>
+    <para>
+        This chapter describes the structure and configuration of the AWS Connector,
+        the operations that are supported by the connector, and the connector schema.
+    </para>
+
+            <!--If "connectorPoolingSupported":false, -->
+        <para>
+            The AWS Connector does not support connector pooling.
+        </para>
+    
+
+    <xinclude:include href='sec-reference-aws-connector.xml'/>
+    <xinclude:include href='sec-implemented-interfaces-aws-connector.xml'/>
+    <xinclude:include href='sec-config-properties-aws-connector.xml'/>
+        <xinclude:include href='sec-schema-aws-connector.xml'/>
+    
+</chapter>

@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1630576842015
+Build-Jdk: 11.0.12
+Built-By: MoniMa
+Bundle-Description: Connector for AWS Application
+Bundle-ManifestVersion: 2
+Bundle-Name: AWS Connector
+Bundle-SymbolicName: org.forgerock.openicf.connectors.aws-connector
+Bundle-Version: 1.5.0.0
+ConnectorBundle-FrameworkVersion: 1.5
+ConnectorBundle-Name: org.forgerock.openicf.connectors.aws-connector
+ConnectorBundle-Version: 1.5.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.forgerock.openicf.connectors.aws;uses:="org.identity
+ connectors.common,org.identityconnectors.common.security,org.identityco
+ nnectors.framework.common.objects,org.identityconnectors.framework.comm
+ on.objects.filter,org.identityconnectors.framework.spi,org.identityconn
+ ectors.framework.spi.operations";version="1.5.0",org.forgerock.openicf.
+ connectors.aws.operations;uses:="com.amazonaws.services.identitymanagem
+ ent,org.forgerock.openicf.connectors.aws,org.identityconnectors.common,
+ org.identityconnectors.framework.common.objects,org.identityconnectors.
+ framework.common.objects.filter";version="1.5.0",org.forgerock.openicf.
+ connectors.aws.util;uses:="com.amazonaws.services.identitymanagement,co
+ m.amazonaws.services.identitymanagement.model,org.forgerock.openicf.con
+ nectors.aws,org.identityconnectors.common.security,org.identityconnecto
+ rs.framework.common.objects,org.identityconnectors.framework.spi.operat
+ ions";version="1.5.0"
+Import-Package: com.amazonaws.auth,com.amazonaws.client.builder,com.amaz
+ onaws.regions,com.amazonaws.services.identitymanagement,com.amazonaws.s
+ ervices.identitymanagement.model,com.amazonaws.services.securitytoken,c
+ om.amazonaws.services.securitytoken.model,org.forgerock.openicf.connect
+ ors.aws,org.forgerock.openicf.connectors.aws.operations,org.forgerock.o
+ penicf.connectors.aws.util,org.identityconnectors.common;version="[1.5,
+ 2)",org.identityconnectors.common.logging;version="[1.5,2)",org.identit
+ yconnectors.common.security;version="[1.5,2)",org.identityconnectors.fr
+ amework.common.exceptions;version="[1.5,2)",org.identityconnectors.fram
+ ework.common.objects;version="[1.5,2)",org.identityconnectors.framework
+ .common.objects.filter;version="[1.5,2)",org.identityconnectors.framewo
+ rk.spi;version="[1.5,2)",org.identityconnectors.framework.spi.operation
+ s;version="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-5.1.1.202006162103
